@@ -1,0 +1,88 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100%;
+    background: rgb(107, 85, 105);
+
+}
+.container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    max-width: 800px;
+    height: 500px;
+    
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    border-radius: 20px;
+}
+.container .card:hover{
+
+background:rgba(46, 32, 32, 0.3);
+}
+
+.container .card .imgbox{
+    max-width: 150px;
+    flex: 0 0 150px;
+
+}
+.container .card .imgbox img{
+    max-width: 300px;
+    border-radius: 20px;
+    transition: .5s;
+    
+}
+.container .card .imgbox img:hover{
+    transform:(5px);
+    max-width: 330px;
+
+}
+.container .card .content{
+    margin-left: 190px;
+
+}
+h2{
+    color: rgb(221, 232, 236);
+    font-size: 27px;
+}
+h2:hover{
+    color: rgb(230, 238, 230);
+    font-size: 30px;
+}
+p{
+    color: rgb(192, 196, 185);
+}
+p::first-letter{
+    font-size: 2.5rem;
+}
+
+
+
+p:hover{
+    color: rgb(155, 235, 148);
+
+    font-style: oblique;
+}
+h3{
+    color: rgb(49, 25, 146);
+    display: inline;
+    background: rgb(231, 223, 223);
+    padding: 10px;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+
+h3:hover{
+    font-size: 22px;
+    transition: .2s;
+}
